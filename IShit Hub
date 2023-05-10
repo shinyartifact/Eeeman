@@ -1,0 +1,59 @@
+getgenv()
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "IShitHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "IV Admin",
+	Callback = function()
+       	loadstring(game:HttpGet(('https://pastebin.com/raw/41RTC51z'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fly GUI V3",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/uprfEy2Q'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Nameless admin",
+	Callback = function()
+   	     loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+  	end    
+})
+
+
+
+
+
+
+OrionLib:MakeNotification({
+	Name = "Hello!",
+	Content = "Thx for using IShit Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+OrionLib:Init()

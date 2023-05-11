@@ -1,0 +1,163 @@
+-- Made by FunniManWFartHub
+
+getgenv()
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Fart Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--------------------------------
+-- Welcome! If you are reading this dont yoink my code and claim its yours.
+-- BTW I have another hub free to yoink because it only has 4 scripts
+--------------------------------
+
+
+--OP Scripts
+
+local Tab = Window:MakeTab({
+	Name = "OP Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+local Section = Tab:AddSection({
+	Name = "Admin"
+})
+
+
+Tab:AddButton({
+	Name = "Nameless admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Lag scripts"
+})
+
+Tab:AddButton({
+	Name = "RTX And anti lag",
+	Callback = function()
+       	 loadstring(game:HttpGet("https://pastebin.com/raw/K6Xf9uph",true))();
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Lag the server",
+	Callback = function()
+   	     loadstring(game:HttpGet(('https://pastebin.com/raw/C1yxMgkQ'),true))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "AntiLag",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/7HuCNNm7'),true))();
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Other hubs"
+})
+
+Tab:AddButton({
+	Name = "Equinox Hub(Another Hub)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/wzB1Qh78",true))();
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "FE Remakes"
+})
+
+
+Tab:AddButton({
+	Name = "T0PK3K Converted",
+	Callback = function()
+      		loadstring(Game:HttpGet('https://raw.githubusercontent.com/LazyNoobGithub/Topkek-Converted/main/T0PK3K%20V1'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "c00lgui ReAwakened",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/qB2d2FkG'),true))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Remote spy's"
+})
+
+
+Tab:AddButton({
+	Name = "Remote Executor",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/Cezrh6EG'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "SimpleSpy",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Remote Spy",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/wLWbc6Jp'),true))()
+  	end    
+})
+
+--Game scripts
+
+local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Build to survive"
+})
+
+Tab:AddButton({
+	Name = "Build to survive GUI",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/ajLVwByU'),true))()
+  	end    
+})
+
+
+
+
+
+
+OrionLib:MakeNotification({
+	Name = "Hello!",
+	Content = "Thx for using Fart Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+OrionLib:Init()
+
+
+
+
